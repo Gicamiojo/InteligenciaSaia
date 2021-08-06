@@ -1,0 +1,14 @@
+#CardQuemSomos{ 
+    
+ background-color:#f3e4e4 ;
+ height:20vh; 
+ width:30vw; 
+ float:left; 
+ border:0.1px solid rgb(194, 190, 190);  
+ position: absolute;
+ left: 0px;
+ top:30%;
+ z-index: -1; 
+
+}
+
