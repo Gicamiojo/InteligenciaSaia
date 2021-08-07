@@ -1,27 +1,38 @@
 
-# Inteligência de Saia  
+# Inteligência de Saia   
+<div>
+  <img src="./public/img/Logo IS.png" width=40%; margin=10px;>          
 
-<img src="./public/img/Logo IS.png" style="width:130px;border-radius:40px; margin-right:200px;" >          
-
-<img src="./public/img/Brasil Bandeira.png" style="width:130px;border-radius:40px;">
+  <img src="./public/img/Brasil Bandeira.png" width=40%; margin=10px;> 
+</div>
 
 #### Plataforma web para freelancer do público feminino no intuito de aproximar cientistas de dados com empresas, pessoas que necessitem deste serviço.
 
 ## Tecnologias Utilizadas  
 
-### Frontend
-<img src="./public/img/HTML 5.png" style="width:130px;border-radius:40px;"> 
-<img src="./public/img/CSS.png" style="width:130px;border-radius:40px;"> 
-<img src="./public/img/JS.png" style="width:130px;border-radius:40px;">  
-<img src="./public/img/REACT.png" style="width:130px;border-radius:40px;">   
+### Frontend 
+<div>
+  <img src="./public/img/HTML 5.png" width=20%; margin=10px;>  
+  
+ 
+  <img src="./public/img/CSS.png" width=20%; margin=10px;>  
+  
+ 
+  <img src="./public/img/JS.png" width=20%; margin=10px;>  
+ 
+ 
+  <img src="./public/img/REACT.png" width=20%; margin=10px;>    
+ </div>
 
-### Backend 
+### Backend  
+<div>
 
-<img src="./public/img/Node.png" style="width:130px;border-radius:40px;">   
+  <img src="./public/img/Node.png" width=20%; margin=10px; alt="Node Js Logo">   
 
-<img src="./public/img/mongoDB.png" style="width:130px;border-radius:40px;"> 
+  <img src="./public/img/mongoDB.png" width=20%; margin=10px; alt="Mongo DB logo"> 
 
-<img src="./public/img/aws.png" style="width:130px;border-radius:40px;" alt="Logo AWS">  
+  <img src="./public/img/aws.png" width=20%; margin=10px; alt="Logo AWS">   
+ </div>
 
 ## Como Executar 
 
