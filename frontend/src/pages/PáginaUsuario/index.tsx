@@ -2,6 +2,7 @@ import React from 'react';
 import { Card} from 'react-bootstrap';
 import BotaoCadastro from '../../components/BotaoCadastro/BotaoCadastro';
 import BotaoQuemSomos from '../../components/CardQuemSomos/QuemSomos';
+import MenuPrincipal from '../../components/MenuPrincipal/menu';
 import SimpleModal from '../../components/ModalQuemSomos/ModalQuemSomos';
 import './styles.css'; 
 
@@ -10,11 +11,12 @@ const PaginaUsuario = () =>{
         <div id="page-home"> 
           <header>
             <img src="./assets/Logo_IS_Circular.png" alt="Logo da Inteligência com Saia" /> 
-        
+           
         </header>  
+        <MenuPrincipal></MenuPrincipal>
          
-         
-            <div className="container col-md-10"> 
+            <div className="container col-md-10">  
+          
             </div> 
         <BotaoQuemSomos></BotaoQuemSomos>
 

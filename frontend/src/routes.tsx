@@ -11,7 +11,7 @@ const Routes = () => {
     return( 
         <BrowserRouter>
             <Route component = {Home} path="/" exact/>  
-            <Route component = {PaginaUsuario} path="/usuario_logado"/>
+            <Route component = {PaginaUsuario} path="/usuario"/>
             <Route component = {AreaFreelancer} path="/AreaFreelancer"/>
             <Route component = {AreaContratante} path="/AreaContratante"/>
            

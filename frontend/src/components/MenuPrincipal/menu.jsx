@@ -1,28 +1,39 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
-
+import Nav from 'react-bootstrap/Nav'; 
+import Container from 'react-bootstrap/Container'; 
+import Row from 'react-bootstrap/Row';
 import './styles.css';
 
-export default function WidgetUser() {  
+export default function MenuPrincipal() {  
   
     
-    return ( 
-     
-      <React.Fragment>
+    return (   
+      <Container id="Menu">
+        <Row> 
+        <Nav className="justify-content-center" activeKey="/home">
+      <Nav.Item  className="BotaoMenu">
+        <Nav.Link href="/home">Active</Nav.Link>
+      </Nav.Item>
+      <Nav.Item className="BotaoMenu">
+        <Nav.Link  eventKey="link-1">Link</Nav.Link>
+      </Nav.Item>
+      <Nav.Item  className="BotaoMenu">
+        <Nav.Link eventKey="link-2">Link</Nav.Link>
+      </Nav.Item>
+      <Nav.Item  className="BotaoMenu">
+        <Nav.Link eventKey="disabled" disabled>
+          Disabled
+        </Nav.Link>
+      </Nav.Item>
+    </Nav>
+
+        </Row>
+      </Container>
+    
+
       
-        <Container maxWidth="sm" id="WidgetUser">  
-    
-           
-        
-         
-        
-           
-        </Container> 
-         
-      </React.Fragment>  
           
-  
-  
+    
     ); 
   
     }

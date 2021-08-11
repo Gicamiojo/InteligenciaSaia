@@ -1,8 +1,6 @@
 import React from 'react'; 
 import { Card} from 'react-bootstrap';
-import BotaoCadastro from '../../components/BotaoCadastro/BotaoCadastro';
-import BotaoQuemSomos from '../../components/CardQuemSomos/QuemSomos';
-import SimpleModal from '../../components/ModalQuemSomos/ModalQuemSomos';
+
 import './styles.css'; 
 
 const AreaContratante = () =>{  

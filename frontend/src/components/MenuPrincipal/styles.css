@@ -1,9 +1,16 @@
- .container{ 
-    width:60px; 
-    height:45px; 
-   margin-right:30px; 
-   border-radius:10px;
-    float:right; 
-    background-color:#FFF; 
+#Menu{ 
+    background-color:#FE81AF; 
+    height:5%; 
 
-}  
+
+} 
+
+.BotaoMenu{ 
+    background-color:#F78065;  
+    display:inline-flex; 
+    margin-right:5%; 
+    width:0% 1% 0% 0%;  
+    width:10%;
+
+  
+}

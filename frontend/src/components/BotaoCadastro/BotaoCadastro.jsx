@@ -1,27 +1,9 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal'; 
-import {  InputGroup } from 'react-bootstrap';
-
+import TextField from '@material-ui/core/TextField';
 import './styles.css';   
-import { InputLabel,Input } from '@material-ui/core';
-
-function rand() {
-  return Math.round(Math.random() * 20) - 10;
-}
-
-function getModalStyle() {
-  const top = 50 + rand();
-  const left = 50 + rand();
-
-  return {
-    top: `${top}%`,
-    left: `${left}%`,
-    transform: `translate(-${top}%, -${left}%)`,
-  };
-}
-
-
+import { makeStyles } from '@material-ui/core/styles';
+import Row from 'react-bootstrap/Row';
 
 export default function BotaoCadastro() {
  
@@ -33,25 +15,32 @@ export default function BotaoCadastro() {
 
   const handleClose = () => {
     setOpen(false);
-  };
+  }; 
+  const useStyles = makeStyles((theme) => ({
+    root: {
+      '& > *': {
+        margin: theme.spacing(1),
+        width: '25ch',
+      },
+    },
+  }));
+  const classes = useStyles();
 
   const body = (
  <div id="ModalCadastro"> 
   <h2 id="CadastroTitulo">Cadastro</h2>  
-  <InputGroup>  
-  
-  <Input className="InputForm" placeholder="Nome"></Input> 
-
-  <Input className="InputForm" placeholder="Email"></Input> 
-  
-  <Input className="InputForm" placeholder="CPF"></Input> 
-  
-  <Input className="InputForm" placeholder="Senha"></Input> 
-  
-  <Input className="InputForm" placeholder="Repetir Senha"></Input>
-   
-  </InputGroup>
+  <Row >
+    <form className={classes.root} noValidate autoComplete="off" md={6}>
+        <TextField id="standard-basic" label="Standard" />  
+        <TextField id="standard-basic" label="Standard" />  
+        <TextField id="standard-basic" label="Standard" />  
+        <TextField id="standard-basic" label="Standard" />  
+        <TextField id="standard-basic" label="Standard" /> 
     
+
+
+      </form> 
+    </Row>
 
  </div>
    
