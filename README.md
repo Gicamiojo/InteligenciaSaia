@@ -1,7 +1,7 @@
 
 # Inteligência de Saia   
 <div>
-  <img src="./images/Logo IS.png" width=40%; margin=10px; style="border-radius:80%;" alt="Logo da empresa Inteligência de Saia">          
+  <img src="./images/Logo IS.png" width=40%; margin=10px; style="border-radius:60%;" alt="Logo da empresa Inteligência de Saia">          
 
   <img src="./images/Brasil Bandeira.png" style="border-radius:60%;" width=40%; margin=10px;> 
 </div>
@@ -31,7 +31,7 @@
 
   <img src="./images/mongoDB.png" width=20%; margin=10px;  style="border-radius:60%;" alt="Mongo DB logo"> 
 
-  <img src="./images/aws.png" width=20%; margin=10px; style="border-radius:60%;" alt="Logo AWS">   
+  <img src="./images/AWS.png" width=20%; margin=10px; style="border-radius:60%;" alt="Logo AWS">   
  </div>
 
 ## Como Executar 
