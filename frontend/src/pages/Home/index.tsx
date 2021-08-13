@@ -8,17 +8,17 @@ import './styles.css';
 
 const Home = () =>{  
     return(   
-        <div id="page-home"> 
+        <div id="page-home" className="container"> 
           <header>
             <img src="../ ../assets/Logo_IS_Circular.png" alt="Logo da Inteligência com Saia" /> 
-        
+            <WidgetLogin></WidgetLogin>
         </header>  
          
          
             <div className="container col-md-10"> 
             </div> 
         <BotaoQuemSomos></BotaoQuemSomos>
-<WidgetLogin></WidgetLogin>
+
          <SimpleModal></SimpleModal> 
      
         <BotaoCadastro></BotaoCadastro>
@@ -83,7 +83,7 @@ const Home = () =>{
 
        </div>
      </div> 
-     <div className="container"> 
+     <div className="container vantagens"> 
      <h2>Nossas Vantagens</h2>
    
         <Card id="CardPropostas">

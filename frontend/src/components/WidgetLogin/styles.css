@@ -1,5 +1,25 @@
-#widget{ 
-    background-color:grey; 
-    width:5%;
-    border-radius:20px;
+form{ 
+    background-color:#FFF; 
+    width: 90%;  
+    height:auto;
+    margin:15px;
+    border-radius:20px; 
+    
+} 
+
+#avatar{ 
+    margin:0% 0% 0% 0.1%;
+} 
+#widget{
+    margin-left:90%; 
+    background-color:#FFF; 
+    width:10%; 
+    border-radius:40px;
+} 
+
+#TextButton{ 
+    font-size:10pt; 
+    color:black; 
+    padding:0%; 
+    margin-left:20%;
 }
