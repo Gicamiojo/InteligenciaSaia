@@ -1,37 +1,39 @@
 
 header{ 
     background-color: #FC5B96;  
-    height:10vh;  
-    width:100%;
+    height:20%;  
+    width:100%; 
+    margin:0%; 
+ 
     
 } 
 
-img{ 
-    width:30px;
-}  
-
-
+h1{ 
+    color:black; 
+    font-size:28pt; 
+    font-family:Montserrat;  
+    text-align:center; 
+    clear:both;
+}
 .container{ 
     height:100%; 
     width:100%; 
 } 
 
 .propostas{ 
-    margin:15% 0% 1% 0%; 
+    margin:10% 0% 1% 0%; 
     position:relative; 
     display:inline-flex;
 }  
 
-.vantagens{ 
-    margin-bottom:30%;
-}
+
 
 .rodape{ 
     position: absolute;
     width: 100vw;
-    height:25vh;
+    height:20vh;
     left: 0px;
-    top: 180vh;
+    top: 100vh;
 
     background: #FC5B96;
 }
@@ -56,6 +58,16 @@ img{
     border:0.4px solid black; 
     margin:auto 10% auto 10%;
 } 
+
+
+#Logo{ 
+    width:80px; 
+    border-radius:40px;  
+    display:flex; 
+    float:left;
+
+}
+
 
 
 div#LogoEmpresas {

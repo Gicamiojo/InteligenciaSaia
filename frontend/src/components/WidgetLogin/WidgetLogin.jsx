@@ -1,23 +1,24 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
-import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 import Grow from '@material-ui/core/Grow';
 import Paper from '@material-ui/core/Paper';
 import Popper from '@material-ui/core/Popper';
-import MenuItem from '@material-ui/core/MenuItem';
-import MenuList from '@material-ui/core/MenuList';
+
 import { makeStyles } from '@material-ui/core/styles';
 import Avatar from '@material-ui/core/Avatar';
 import './styles.css'; 
-import TextField from '@material-ui/core/TextField'; 
+import Input from '@material-ui/core/Input';
+import InputLabel from '@material-ui/core/InputLabel'; 
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: 'flex', 
+    display: 'block',  
+   
   },
   paper: {
-    marginRight: theme.spacing(10),
-  },
+    marginRight: theme.spacing(3),
+  }, 
+
 }));
 
 
@@ -25,6 +26,8 @@ export default function WidgetLogin() {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
   const anchorRef = React.useRef(null);
+  const [name, setName] = React.useState(''); 
+  const [email, setEmail] = React.useState(''); 
 
   const handleToggle = () => {
     setOpen((prevOpen) => !prevOpen);
@@ -55,21 +58,23 @@ export default function WidgetLogin() {
     prevOpen.current = open;
   }, [open]);
 
+  const handleChange = (event) => {
+    setName(event.target.value);
+  };
+  const EmailChange = (event) => {
+    setEmail(event.target.value);
+  }; 
+  return (  
+      
+   
   
-    
-  return ( 
   
  <div className={classes.root} id="widget">
 
  <div>
-   <Button
-     ref={anchorRef}
-     aria-controls={open ? 'menu-list-grow' : undefined}
-     aria-haspopup="true"
-     onClick={handleToggle} 
-    
-     >
-   <Avatar type="select" id="avatar" alt="Maria" src="/static/images/avatar/1.jpg" /> 
+   <Button ref={anchorRef} aria-controls={open ? 'menu-list-grow' : undefined} aria-haspopup="true" onClick={handleToggle}> 
+
+    <Avatar type="select" id="avatar" alt="Maria" src="/static/images/avatar/1.jpg" /> 
    <p id="TextButton">Login</p>
    </Button>
    <Popper open={open} anchorEl={anchorRef.current} role={undefined} transition disablePortal>
@@ -79,14 +84,15 @@ export default function WidgetLogin() {
          style={{ transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom' }}
        >
          <Paper>
-           <ClickAwayListener onClickAway={handleClose}>
            <form noValidate autoComplete="off">
-             <TextField id="outlined-basic" label="Email" variant="outlined" /><br/>
-               <TextField id="outlined-basic" label="Senha" variant="outlined" />  
-               <Button variant="contained">Entrar</Button>
+        <InputLabel htmlFor="component-simple">Email</InputLabel>
+        <Input id="component-simple" value={name} onChange={handleChange} />
+        <InputLabel htmlFor="component-simple">Senha</InputLabel>
+        <Input type="password" id="component-simple" value={email} onChange={EmailChange} />
+    
+      
             </form> 
-            
-           </ClickAwayListener>
+            <Button variant="contained">Entrar</Button>
          </Paper>
        </Grow>
      )}

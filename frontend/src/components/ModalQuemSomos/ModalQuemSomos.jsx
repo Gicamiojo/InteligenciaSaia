@@ -69,7 +69,7 @@ export default function SimpleModal() {
   return (
     <div>
      
-      <Button variant="contained" type="button" onClick={handleOpen} id="BotaoConhecaTime">Conheça o time</Button> 
+      <Button  variant="contained" type="button" onClick={handleOpen} id="BotaoConhecaTime">Conheça o time</Button> 
      
       <Modal
         open={open}

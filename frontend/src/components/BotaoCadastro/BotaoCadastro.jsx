@@ -3,7 +3,9 @@ import Modal from '@material-ui/core/Modal';
 import TextField from '@material-ui/core/TextField';
 import './styles.css';   
 import { makeStyles } from '@material-ui/core/styles';
-import Row from 'react-bootstrap/Row';
+import Row from 'react-bootstrap/Row'; 
+import Container from 'react-bootstrap/Container';
+import Button from 'react-bootstrap/Button'; 
 
 export default function BotaoCadastro() {
  
@@ -19,8 +21,8 @@ export default function BotaoCadastro() {
   const useStyles = makeStyles((theme) => ({
     root: {
       '& > *': {
-        margin: theme.spacing(1),
-        width: '25ch',
+        margin: theme.spacing(4),
+        width: '50ch',
       },
     },
   }));
@@ -28,14 +30,33 @@ export default function BotaoCadastro() {
 
   const body = (
  <div id="ModalCadastro"> 
-  <h2 id="CadastroTitulo">Cadastro</h2>  
-  <Row >
-    <form className={classes.root} noValidate autoComplete="off" md={6}>
-        <TextField id="standard-basic" label="Standard" />  
+    
+  <Row > 
+
+    <form className={classes.root} noValidate autoComplete="off">   
+    <div id="TituloModal"> 
+      <h2 id="CadastroTitulo">Cadastro</h2>
+
+    </div>
+    
+    <Container>
+      <Row lg="6"> 
+      <TextField id="standard-basic" label="Standard" />  
         <TextField id="standard-basic" label="Standard" />  
         <TextField id="standard-basic" label="Standard" />  
         <TextField id="standard-basic" label="Standard" />  
         <TextField id="standard-basic" label="Standard" /> 
+
+      </Row> 
+      <Row xl={6}>  
+
+      
+      
+      
+      </Row>
+      <Button id="cadastrar"variant="success"><p id="BotaoCadastroTexto">Concluir</p></Button>
+    </Container>
+      
     
 
 

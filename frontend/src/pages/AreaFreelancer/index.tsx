@@ -7,7 +7,7 @@ const AreaFreelancer = () =>{
     return(   
         <div id="page-home"> 
           <header>
-            <img src="./assets/Logo_IS_Circular.png" alt="Logo da Inteligência com Saia" /> 
+            <img src="../../assets/Logo_IS_Circular.png" alt="Logo da Inteligência com Saia" /> 
         
         </header>  
          

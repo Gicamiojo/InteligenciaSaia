@@ -10,7 +10,7 @@ export default function BotaoQuemSomos() {
    
     <React.Fragment>
       <CssBaseline />
-      <Container maxWidth="sm" id="CardQuemSomos"> 
+      <Container maxWidth="xl" id="CardQuemSomos"> 
         <Typography component="div"  />  
         <p>  Dolores amet at sanctus sed duo dolor. Invidunt dolor labore lorem lorem lorem voluptua lorem, amet vero nonumy ea lorem.</p> 
        

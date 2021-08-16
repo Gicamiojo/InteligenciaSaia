@@ -5,16 +5,25 @@ form{
     margin:15px;
     border-radius:20px; 
     
-} 
+}  
+FormControl{ 
+    display:inline-block;
+}
 
+Button{ 
+    display:inline-flex;
+}
 #avatar{ 
-    margin:0% 0% 0% 0.1%;
+    margin:0% 0% 0% 0.5%; 
+    padding:0px;
 } 
 #widget{
     margin-left:90%; 
     background-color:#FFF; 
-    width:10%; 
-    border-radius:40px;
+    width:8%; 
+    border-radius:40px; 
+    display:inline-flex;
+
 } 
 
 #TextButton{ 
@@ -22,4 +31,5 @@ form{
     color:black; 
     padding:0%; 
     margin-left:20%;
-}
+} 
+
