@@ -4,6 +4,11 @@ header{
     
 } 
 
+img{ 
+    width:40px; 
+    
+}  
+
 
 .container{ 
     height:25vh; 
@@ -32,20 +37,6 @@ background: #FC5B96;
     clear:both;
 } 
 
-#Logo{ 
-    width:5%; 
-    border-radius:40px; 
-    margin:0.2% 0% 1% 0%;
-}  
-
-#title{ 
-    text-align:center; 
-    margin-left:30%;  
-  
-    font-family:Montserrat;  
-    position:absolute; 
-    display:inline-flex;
-}
 
 
 

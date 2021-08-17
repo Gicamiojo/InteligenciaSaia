@@ -1,20 +1,26 @@
 import React from 'react'; 
-import { Card, Row} from 'react-bootstrap';
+import { Card} from 'react-bootstrap';
 import BotaoCadastro from '../../components/BotaoCadastro/BotaoCadastro';
 import BotaoQuemSomos from '../../components/CardQuemSomos/QuemSomos';
 import SimpleModal from '../../components/ModalQuemSomos/ModalQuemSomos';
 import WidgetLogin from '../../components/WidgetLogin/WidgetLogin'; 
 import Logo from '../../assets/LogoIS.png';
-import './styles.css'; 
+import './styles.css';  
 
 const Home = () =>{  
     return(   
-        <div id="page-home" className="container"> 
+        <div id="page-home" > 
           <header>   
-                 <h1>Inteligência de Saia</h1> 
-                   
-              <WidgetLogin></WidgetLogin>
-                <img id ='Logo'src={Logo} alt="Logo da inteligência de saia"/> 
+          <WidgetLogin></WidgetLogin>   
+          <img id ='Logo'src={Logo} alt="Logo da inteligência de saia"/>      
+             
+          
+          <h1 id="title">Inteligência de Saia</h1>   
+                  
+              
+          
+                 
+            
              
          
         

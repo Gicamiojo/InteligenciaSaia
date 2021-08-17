@@ -40,21 +40,23 @@ export default function BotaoCadastro() {
     </div>
     
     <Container>
-      <Row lg="6"> 
-      <TextField id="standard-basic" label="Standard" />  
+      <Row md={6}> 
+        
         <TextField id="standard-basic" label="Standard" />  
         <TextField id="standard-basic" label="Standard" />  
         <TextField id="standard-basic" label="Standard" />  
-        <TextField id="standard-basic" label="Standard" /> 
+        <TextField id="standard-basic" label="Standard" />  
+        <TextField id="standard-basic" label="Standard" />  
+
+        <Button id="cadastrar"variant="success"><p id="BotaoConcluirTexto">Concluir</p></Button>
 
       </Row> 
-      <Row xl={6}>  
-
-      
+      <Row lg={6}>   
+    
+  
       
       
       </Row>
-      <Button id="cadastrar"variant="success"><p id="BotaoCadastroTexto">Concluir</p></Button>
     </Container>
       
     
@@ -69,11 +71,13 @@ export default function BotaoCadastro() {
   );
 
   return (
-    <div>
-      <button id="BotaoCadastro"  onClick={handleOpen}>  
+    <div> 
+           
+      <button id="BotaoCadastro"  onClick={handleOpen}>   
+      <p id="BotaoCadastroTexto">Junte-se</p>
+
      
     
-     Junte-se a nós
           
       </button>
       <Modal

@@ -1,65 +1,16 @@
-header{ 
+.toolbar{
+    paddingRight: 24;
+   
     background-color: #FC5B96;  
     height:10vh;
     
 } 
+.title{
+    flexGrow: 1;  
+    color:black;
+    font-family:Montserrat; 
+    font-size:16pt; 
+    text-align:center; 
 
-img{ 
-    width:40px; 
     
-}  
-
-
-.container{ 
-    height:25vh; 
-    width:100vw; 
-} 
-
-.propostas{ 
-    margin:15% 0% 1% 0%;
-} 
-
-.rodape{ 
-    position: absolute;
-width: 100vw;
-height:300px;
-left: 0px;
-top: 170vh;
-
-background: #FC5B96;
-}
-#page-home{ 
-    height:100vh;
-} 
-
-#TextoEmpresas{ 
-    float:left; 
-    clear:both;
-} 
-
-
-
-
-#CardPropostas{ 
-    width:250px; 
-    border:0.4px solid black; 
-    margin:auto 10% auto 10%;
-} 
-
-
-div#LogoEmpresas {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
-  }
-  
-  div#LogoEmpresas:hover {
-    border: 1px solid #777;
-  }
-  
-  div#LogoEmpresas img {
-    width: 100%;
-    height: auto; 
-    display:inline-flex;
   }

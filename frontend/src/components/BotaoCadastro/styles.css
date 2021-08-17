@@ -11,13 +11,22 @@
     color:black; 
     position:fixed; 
     float:right; 
-    margin:5% 2% 0% 80%;
+    margin:3% 2% 0% 80%; 
  
-} 
+}  
+
+#BotaoCadastroTexto{ 
+    color:black; 
+    font-family:Montserrat; 
+    position:absolute; 
+    text-align:center; 
+    margin-top:40px; 
+    margin-left:8px;
+}
 #ModalCadastro{
     background-color:#FFF; 
     width:700px; 
-    height:550px; 
+    height:500px; 
     border-radius:40px; 
     margin-left:35%; 
     margin-top:10%;
@@ -29,7 +38,7 @@
     color:black;
     text-align:center; 
     border-radius:35px; 
-  
+ 
    
 } 
 
@@ -44,8 +53,9 @@
 }
 
 #standard-basic{ 
-    width:80%; 
-    margin:15px;
+    width:60%; 
+    margin:15px; 
+    display:block;
 }  
 
 #cadastrar{ 
@@ -58,7 +68,7 @@
 
 } 
 
-#BotaoCadastroTexto{ 
+#BotaoConcluirTexto{ 
     text-align:center; 
     color:black;  
     font-size:16pt; 
