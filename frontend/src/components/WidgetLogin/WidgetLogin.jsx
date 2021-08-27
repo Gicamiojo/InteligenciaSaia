@@ -33,20 +33,7 @@ export default function WidgetLogin() {
     setOpen((prevOpen) => !prevOpen);
   };
 
-  const handleClose = (event) => {
-    if (anchorRef.current && anchorRef.current.contains(event.target)) {
-      return;
-    }
-
-    setOpen(false);
-  };
-
-  function handleListKeyDown(event) {
-    if (event.key === 'Tab') {
-      event.preventDefault();
-      setOpen(false);
-    }
-  }
+  
 
   // return focus to the button when we transitioned from !open -> open
   const prevOpen = React.useRef(open);
@@ -84,7 +71,7 @@ export default function WidgetLogin() {
          style={{ transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom' }}
        >
          <Paper>
-           <form noValidate autoComplete="off">
+           <form  noValidate autoComplete="off">
         <InputLabel htmlFor="component-simple">Email</InputLabel>
         <Input id="component-simple" value={name} onChange={handleChange} />
         <InputLabel htmlFor="component-simple">Senha</InputLabel>
@@ -92,7 +79,7 @@ export default function WidgetLogin() {
     
       
             </form> 
-            <Button variant="contained">Entrar</Button>
+            <Button id="BotaoEntrar" variant="contained">Entrar</Button>
          </Paper>
        </Grow>
      )}

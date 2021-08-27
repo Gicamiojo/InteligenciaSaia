@@ -6,22 +6,19 @@ import Drawer from '@material-ui/core/Drawer';
 import Box from '@material-ui/core/Box';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import List from '@material-ui/core/List';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
-import Badge from '@material-ui/core/Badge';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
-import Link from '@material-ui/core/Link';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-import NotificationsIcon from '@material-ui/icons/Notifications'; 
-import BarGraphic from '../GraphicADM/BarGraphic';
+import BarGraphic from '../../components/GraphicADM/BarGraphic';
 import './styles.css';  
-import Chart from '../GraphicADM/ChartGraphic.js';
+import Chart from '../../components/GraphicADM/ChartGraphic.js';
 import Logo from '../../assets/LogoIS.png';
+import WidgetUsuario from '../../components/WidgetUsuario/WidgetUsuario';
 
 
 
@@ -95,10 +92,11 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
     display: 'flex',
     overflow: 'auto',
-    flexDirection: 'column',
+    flexDirection: 'column', 
+    height:500, 
   },
   fixedHeight: {
-    height: 240,
+    height: 300,
   },
 }));
 
@@ -125,12 +123,14 @@ export default function ADM() {
             onClick={handleDrawerOpen}
             className={clsx(classes.menuButton, open && classes.menuButtonHidden)}
           >
-            <MenuIcon />
+            <MenuIcon /> 
           </IconButton> 
           <img id ='Logo'src={Logo} alt="Logo da inteligência de saia"/>  
-          <Typography component="h1" variant="h6"  noWrap className="title">
+          <Typography component="h1" variant="h6"  noWrap id="title">
             Inteligência de Saia
-          </Typography>
+          </Typography> 
+          <WidgetUsuario></WidgetUsuario>
+
         
         </Toolbar>
       </AppBar>
@@ -170,12 +170,12 @@ export default function ADM() {
            
              <Grid item xs={12}>
               <Paper className={classes.paper}>
-            
+              <BarGraphic/>
               </Paper>
             </Grid>
           </Grid>
           <Box pt={4}>
-          <BarGraphic/>
+     
           </Box>
         </Container>
       </main>

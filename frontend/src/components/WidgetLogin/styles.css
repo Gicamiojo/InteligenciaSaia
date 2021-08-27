@@ -1,13 +1,29 @@
 form{ 
     background-color:#FFF; 
-    width: 90%;  
-    height:auto;
+    width: 15vw;  
+    height:10vh;
     margin:5px;
     border-radius:20px; 
     
-}  
+}   
+
+
 FormControl{ 
     display:inline-flex;
+} 
+
+#component-simple{ 
+    width:60%; 
+    height:5%; 
+    margin:0.1%;
+} 
+
+#BotaoEntrar{ 
+    margin:0.8%; 
+    background-color:#25b825;  
+    width:10%; 
+    height:5%;
+
 }
 
 Button{ 
@@ -26,7 +42,8 @@ Button{
     position:absolute;
   
     
-} 
+}  
+
 
 #TextButton{ 
     font-size:10pt; 

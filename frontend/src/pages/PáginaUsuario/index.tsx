@@ -1,29 +1,39 @@
 import React from 'react'; 
-import { Card, Carousel} from 'react-bootstrap';
-import BotaoCadastro from '../../components/BotaoCadastro/BotaoCadastro';
-import BotaoQuemSomos from '../../components/CardQuemSomos/QuemSomos';
-import MenuPrincipal from '../../components/MenuPrincipal/menu';
-import SimpleModal from '../../components/ModalQuemSomos/ModalQuemSomos'; 
+import { Card} from 'react-bootstrap';
 import './styles.css'; 
 import CarousselNoticias from '../../components/CarousselNoticias';
+import WidgetUsuario from '../../components/WidgetUsuario/WidgetUsuario';
+import MenuPrincipal from '../../components/MenuPrincipal/menu';
+import Logo from '../../assets/LogoIS.png';
 
 const PaginaUsuario = () =>{  
     return(   
-        <div id="page-home"> 
-          <header>
-           
-           
-        </header>   
+        <div id="page-usuario"> 
+        <header>   
+          <WidgetUsuario></WidgetUsuario>   
+          <img id ='Logo'src={Logo} alt="Logo da inteligência de saia"/>      
+             
+          
+          <h1 id="title">Inteligência de Saia</h1>   
+                  
+              
+          
+                 
+            
+             
+         
+        
+        </header>  
         
         <MenuPrincipal></MenuPrincipal>
          
-            <div className="container col-md-10">   
+            <div className="container">   
             <CarousselNoticias></CarousselNoticias>
           
             </div> 
        
 
-        <div className="propostas container">  
+        <div className="propostas ">  
         <h2>Nossas propostas</h2>
        
         <Card id="CardPropostas">

@@ -1,16 +1,15 @@
 .toolbar{
-    paddingRight: 24;
    
     background-color: #FC5B96;  
     height:10vh;
     
 } 
-.title{
-    flexGrow: 1;  
+#title{
+ 
     color:black;
     font-family:Montserrat; 
-    font-size:16pt; 
-    text-align:center; 
-
+    font-size:24pt; 
+    text-align:center;  
+    
     
   }
