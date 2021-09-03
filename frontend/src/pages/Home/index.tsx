@@ -36,7 +36,7 @@ const Home = () =>{
         <BotaoCadastro></BotaoCadastro>
       
 
-        <div className="propostas container">  
+        <div className="propostas ">  
         <h2>Nossas propostas</h2>
        
         <Card id="CardPropostas">

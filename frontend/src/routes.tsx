@@ -8,7 +8,7 @@ import AreaContratante from './pages/AreaContratante/index';
 import ADM from './pages/ADM/index'; 
 import ADMProjetos from './pages/ADMProjetos/index'; 
 import ADMOperacoes from './pages/ADMOperacoes/index';
-
+import Chat from './pages/Chat/index';
 
 const Routes = () => { 
     return( 
@@ -19,7 +19,8 @@ const Routes = () => {
             <Route component = {AreaContratante} path="/AreaContratante"/>
             <Route component = {ADM} path="/adm"/>
             <Route component = {ADMProjetos} path="/admprojetos"/>
-            <Route component = {ADMOperacoes} path="/admoperacoes"/>
+            <Route component = {ADMOperacoes} path="/admoperacoes"/> 
+            <Route component = {Chat} path ="/chat"/>
         </BrowserRouter> 
 
         
