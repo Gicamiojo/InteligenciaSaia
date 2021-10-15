@@ -1,4 +1,4 @@
-const mongoose = require('../database/index');
+const mongoose = require('../database');
 
 
 const ProjectSchema = new mongoose.Schema({
@@ -12,12 +12,12 @@ const ProjectSchema = new mongoose.Schema({
   },
   user: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'User',
+    ref: 'Users',
     require: true,
   },
   tasks: [{
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'Task',
+    ref: 'Projects',
   }],
   createdAt: {
     type: Date,
@@ -25,6 +25,6 @@ const ProjectSchema = new mongoose.Schema({
   },
 });
 
-const Project = mongoose.model('Projects', ProjectSchema);
+const Project = mongoose.model('Project', ProjectSchema);
 
 module.exports = Project;

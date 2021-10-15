@@ -1,9 +1,11 @@
 import React from 'react'; 
 import { Card} from 'react-bootstrap';
-
 import './styles.css'; 
+import api from '../../services/api';
 
 const AreaFreelancer = () =>{  
+  
+ 
     return(   
         <div id="page-home"> 
           <header>
@@ -22,7 +24,7 @@ const AreaFreelancer = () =>{
         <Card id="CardPropostas">
 
   <Card.Body>
-    <Card.Title>Card Title</Card.Title>
+    <Card.Title></Card.Title>
     <Card.Text>
       Some quick example text to build on the card title and make up the bulk of
       the card's content.
