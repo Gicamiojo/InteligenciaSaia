@@ -1,11 +1,22 @@
-import React from 'react'; 
+import React from 'react';  
 import { Card} from 'react-bootstrap';
 import BotaoCadastro from '../../components/BotaoCadastro/BotaoCadastro';
 import BotaoQuemSomos from '../../components/CardQuemSomos/QuemSomos';
 import SimpleModal from '../../components/ModalQuemSomos/ModalQuemSomos';
 import WidgetLogin from '../../components/WidgetLogin/WidgetLogin'; 
 import Logo from '../../assets/LogoIS.png';
-import './styles.css';  
+import './styles.css';   
+import axios from 'axios'; 
+import api from '../../services/api';
+
+interface User{ 
+  id: number;
+  name: string;
+  cpf: number; 
+  senha: string; 
+  repetirsenha:string; 
+}
+
 
 const Home = () =>{  
     return(   
@@ -44,8 +55,7 @@ const Home = () =>{
   <Card.Body>
     <Card.Title>Card Title</Card.Title>
     <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
+      
     </Card.Text>
   </Card.Body>
 </Card>

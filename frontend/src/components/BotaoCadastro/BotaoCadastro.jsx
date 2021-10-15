@@ -4,7 +4,8 @@ import TextField from '@material-ui/core/TextField';
 import './styles.css';   
 import { makeStyles } from '@material-ui/core/styles';
 import Row from 'react-bootstrap/Row'; 
-import Container from 'react-bootstrap/Container';
+
+
 import Button from 'react-bootstrap/Button'; 
 
 export default function BotaoCadastro() {
@@ -21,51 +22,55 @@ export default function BotaoCadastro() {
   const useStyles = makeStyles((theme) => ({
     root: {
       '& > *': {
-        margin: theme.spacing(4),
-        width: '50ch',
-      },
+     
+        width: '40ch',  
+
+      },   
+   
     },
   }));
   const classes = useStyles();
 
   const body = (
- <div id="ModalCadastro"> 
-    
-  <Row > 
 
-    <form className={classes.root} noValidate autoComplete="off">   
+    
+ 
+<div className="form"> 
+
+<form className={classes.root} noValidate autoComplete="off">   
     <div id="TituloModal"> 
       <h2 id="CadastroTitulo">Cadastro</h2>
 
     </div>
-    
-    <Container>
-      <Row md={6}> 
+ 
+    <Row md={10}> 
         
-        <TextField id="standard-basic" label="Standard" />  
-        <TextField id="standard-basic" label="Standard" />  
-        <TextField id="standard-basic" label="Standard" />  
-        <TextField id="standard-basic" label="Standard" />  
-        <TextField id="standard-basic" label="Standard" />  
-
-        <Button id="cadastrar"variant="success"><p id="BotaoConcluirTexto">Concluir</p></Button>
+        <TextField id="standard-basic" label="Nome Completo" />  
+        <TextField  id="standard-basic" label="Email" />  
+        <TextField id="standard-basic" label="CPF" />   
+        <TextField id="standard-basic" label="Senha" />  
+        <TextField id="standard-basic" label="Repetir senha" />  
+               
 
       </Row> 
-      <Row lg={6}>   
     
-  
+      <Button type="submit" id="cadastrar" variant="success"><p id="BotaoConcluirTexto">Concluir</p></Button>
+
+ 
+   
       
-      
-      </Row>
-    </Container>
+ 
       
     
 
 
       </form> 
-    </Row>
 
- </div>
+</div>
+    
+    
+
+
    
 
   );
@@ -80,13 +85,8 @@ export default function BotaoCadastro() {
     
           
       </button>
-      <Modal
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="simple-modal-title"
-        aria-describedby="simple-modal-description" 
-       
-      >
+      <Modal open={open} onClose={handleClose}  aria-labelledby="simple-modal-title"
+        aria-describedby="simple-modal-description">
         {body}
       </Modal>
     </div>

@@ -1,9 +1,6 @@
 import React from 'react'; 
-import { Card, Carousel} from 'react-bootstrap';
-import BotaoCadastro from '../../components/BotaoCadastro/BotaoCadastro';
-import BotaoQuemSomos from '../../components/CardQuemSomos/QuemSomos';
+import { Card } from 'react-bootstrap'; 
 import MenuPrincipal from '../../components/MenuPrincipal/menu';
-import SimpleModal from '../../components/ModalQuemSomos/ModalQuemSomos'; 
 import './styles.css'; 
 import CarousselNoticias from '../../components/CarousselNoticias';
 

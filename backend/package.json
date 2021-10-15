@@ -6,13 +6,17 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
-    "axios": "^0.21.1",
+    "axios": "^0.21.4",
+    "bcrypt": "^5.0.1",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "mongoose": "^5.13.7",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.9",
+    "moongoose": "^0.0.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "^1.1.5",
+    "typescript": "^4.4.4",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
@@ -41,7 +45,6 @@
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
-  "devDependencies": {},
   "keywords": [],
   "author": "",
   "license": "ISC"
