@@ -3,12 +3,12 @@ import Button from '@material-ui/core/Button';
 import Grow from '@material-ui/core/Grow';
 import Paper from '@material-ui/core/Paper';
 import Popper from '@material-ui/core/Popper';
-
 import { makeStyles } from '@material-ui/core/styles';
 import Avatar from '@material-ui/core/Avatar';
 import './styles.css'; 
 import Input from '@material-ui/core/Input';
-import InputLabel from '@material-ui/core/InputLabel'; 
+import InputLabel from '@material-ui/core/InputLabel';  
+import api from '../../services/api';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -26,8 +26,8 @@ export default function WidgetLogin() {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
   const anchorRef = React.useRef(null);
-  const [name, setName] = React.useState(''); 
-  const [email, setEmail] = React.useState(''); 
+  const [setName] = React.useState(''); 
+  const [ setEmail] = React.useState(''); 
 
   const handleToggle = () => {
     setOpen((prevOpen) => !prevOpen);
@@ -73,9 +73,9 @@ export default function WidgetLogin() {
          <Paper>
            <form  noValidate autoComplete="off">
         <InputLabel htmlFor="component-simple">Email</InputLabel>
-        <Input id="component-simple" value={name} onChange={handleChange} />
+        <Input id="component-simple" value={api.email} onChange={handleChange} />
         <InputLabel htmlFor="component-simple">Senha</InputLabel>
-        <Input type="password" id="component-simple" value={email} onChange={EmailChange} />
+        <Input type="password" id="component-simple" value={api.password} onChange={EmailChange} />
     
       
             </form> 
