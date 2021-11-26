@@ -1,12 +1,19 @@
 
-# Inteligência de Saia   
-<div>
-  <img src="./images/Logo IS.png" width=40%; margin=10px; style="border-radius:60%;" alt="Logo da empresa Inteligência de Saia">          
+<h1 align="center" font-size=16pt> Inteligência de Saia  </p> 
 
-  <img src="./images/Brasil Bandeira.png" style="border-radius:60%;" width=40%; margin=10px;> 
+<p align="center">
+  <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+ 
+</p>  
+
+<div>
+  <img width=300px; margin=10px;  src="./images/Logo IS.png"  alt="Logo da empresa Inteligência de Saia">          
+
+  <img width=300px; margin=10px; src="./images/Brasil Bandeira.png" style="border-radius:60%;" width=40%; margin=10px;> 
 </div>
 
-#### Plataforma web para freelancer do público feminino no intuito de aproximar cientistas de dados com empresas, pessoas que necessitem deste serviço.
+<p font-size=12pt> Plataforma web para freelancer do público feminino no intuito de aproximar cientistas de dados com empresas, pessoas que necessitem deste serviço.<p>
 
 ## Tecnologias Utilizadas  
 
@@ -43,4 +50,5 @@
 
 
 
+<p align="center">Desenvolvido com ❤ por Rodrigo Almeida Bezerra</p>
 
